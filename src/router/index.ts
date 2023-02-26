@@ -9,7 +9,21 @@ const router = createRouter({
       name: 'home',
       component: Readme,
     },
+    {
+      path: '/day01',
+      name: 'Expand Card',
+      component: () => import('@/views/ExpandCard.vue'),
+      meta: {
+        title: 'Expand Card',
+      },
+    },
   ],
+})
+
+router.beforeEach((to, from, next) => {
+  // 设置页面标题
+  document.title = to.meta.title ? to.meta.title as string : '50Projects50Days'
+  next()
 })
 
 export default router
