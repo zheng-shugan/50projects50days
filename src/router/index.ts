@@ -17,6 +17,14 @@ const router = createRouter({
         title: 'Expand Card',
       },
     },
+    {
+      path: '/progress-steps',
+      name: 'Progress Steps',
+      component: () => import('@/views/ProgressSteps.vue'),
+      meta: {
+        title: 'Progress Steps',
+      },
+    },
   ],
 })
 
