@@ -53,7 +53,7 @@ const clickPanel = (panel: Panel) => {
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
